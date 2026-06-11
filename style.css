@@ -417,65 +417,116 @@ button:hover{
 
 
 
-/* intro text */
-
-
-.contact-intro h1{
-    font-size:4rem;
-    margin-bottom:15px;
+.contact {
+    padding: 180px 8% 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
 }
 
-.contact-intro p{
-    color:#9ea4c7;
-    font-size:18px;
-    line-height:1.7;
+
+.contact-intro {
+    text-align: center;
+    max-width: 700px;
 }
 
-/* grid container */
+.contact-intro h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    color: #9ea4c7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.contact-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
 
 
 .contact-card {
-    min-width: 220px;
-}
+    width: 260px;
+    height: 220px;
 
-/* cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    gap: 15px;
 
-/* icon */
-.contact-card img{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    transition:0.3s ease;
-    filter:drop-shadow(0 10px 20px rgba(0,0,0,0.35));
-}
+    border-radius: 20px;
 
-/* hover effects */
-.contact-card:hover{
-    transform:translateY(-8px) scale(1.03);
-}
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
 
-.contact-card:hover img{
-    transform:scale(1.15);
-}
+    backdrop-filter: blur(18px);
 
-/* linkedin */
-.linkedin{
-    background:linear-gradient(135deg, #0077b5, #00a0dc);
-}
+    transition: 0.3s ease;
 
-/* instagram */
-.instagram{
-    background:linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+
+    cursor: pointer;
 }
 
 
 
+.contact-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+}
 
 
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+    transition: 0.3s ease;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.4));
+}
+
+.contact-card:hover img {
+    transform: scale(1.15);
+}
 
 
+.linkedin {
+    position: relative;
+}
 
+.linkedin::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: radial-gradient(circle at top, rgba(0,119,181,0.35), transparent 70%);
+    z-index: -1;
+}
+
+
+.instagram {
+    position: relative;
+}
+
+.instagram::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: radial-gradient(circle at top, rgba(221,42,123,0.35), transparent 70%);
+    z-index: -1;
+}
 
 
 
@@ -645,6 +696,8 @@ button:hover{
         gap: 30px;
     }
 
+    /* ❌ REMOVED: project img max-width fix (replaced with swipe system on mobile) */
+
     .project {
         flex-direction: column;
         align-items: flex-start;
@@ -679,42 +732,30 @@ button:hover{
 }
 
 
-/* ================= MOBILE (<=768px) ================= */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
 
 
+    .contact-intro h1 {
+        font-size: 2.2rem;
+    }
 
     .contact-grid {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }   
-
-    /* HEADER */
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        padding: 15px 5%;
         flex-direction: column;
-        gap: 8px;
-
-        background: rgba(2,3,13,0.65);
-        backdrop-filter: blur(12px);
-
-        z-index: 999;
+        gap: 20px;
     }
 
-    nav {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .contact-card {
+    width: 100%;
+    padding: 25px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    max-width: 280px;
+    margin: 0 auto;
     }
 
-    /* HERO (INDEX FIX) */
+    /* HERO FIX */
     .hero {
         min-height: 100vh;
         height: auto;
@@ -722,13 +763,16 @@ button:hover{
         align-items: flex-start;
     }
 
+    /* CONTENT WIDTH CONTROL */
     .content {
         max-width: 100%;
     }
 
+    /* TYPOGRAPHY FIX */
     h1 {
         font-size: 2.2rem;
         line-height: 1.15;
+        margin-top: 15px;
     }
 
     p {
@@ -737,14 +781,33 @@ button:hover{
         max-width: 100%;
     }
 
+    /* BUTTON FIX */
     button {
         padding: 14px 24px;
         font-size: 15px;
         border-radius: 12px;
-        width: auto;
     }
 
-    /* BLOBS */
+    /* HEADER FIX (IMPORTANT) */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 8px;
+        background: rgba(2,3,13,0.65);
+        backdrop-filter: blur(12px);
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* BLOBS OPTIMIZATION */
     .blob {
         filter: blur(45px);
         opacity: 0.7;
@@ -765,17 +828,17 @@ button:hover{
         height: 200px;
     }
 
-    /* FLOATING CARDS OFF */
+    /* FLOATING CARDS OFF (MOBILE CLEAN) */
     .floating-card {
         display: none;
     }
 
-    /* PROJECT SWIPE CAROUSEL */
     .project {
         flex-direction: column;
         gap: 30px;
     }
 
+    /* ✅ PROJECT SWIPE CAROUSEL (NEW) */
     .project-media {
         width: 100%;
         display: flex;
@@ -784,6 +847,7 @@ button:hover{
 
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
+
         gap: 0;
     }
 
@@ -806,59 +870,29 @@ button:hover{
         scrollbar-width: none;
     }
 
-    /* ABOUT */
+    /* END SWIPE FIX */
+
     .about {
         flex-direction: column;
         height: auto;
     }
 
-    /* CONTACT */
     .contact-grid {
         flex-direction: column;
         gap: 15px;
     }
 
-    /* GRAPHICS */
     .gallery-wrapper {
         flex-direction: column;
     }
-}
 
-.contact {
-    min-height: 100vh;
-    padding: 140px 8% 80px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 60px;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-intro {
-    text-align: center;
-}
-
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-    width: 100%;
-    max-width: 900px;
+    .floating-card {
+        display: none;
+    }
 }
 
 
-
-
-/* ================= SMALL MOBILE (<=480px) ================= */
+/* ================= SMALL MOBILE ================= */
 @media (max-width: 480px) {
 
     h1 {
@@ -869,16 +903,16 @@ button:hover{
         font-size: 16px;
     }
 
+    button {
+        width: 100%;
+    }
+
     .logo {
         font-size: 32px;
     }
 
     .tag {
         font-size: 12px;
-    }
-
-    button {
-        width: 100%;
     }
 
     .project-text h2 {
