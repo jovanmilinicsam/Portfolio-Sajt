@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <div class="logo">Jovan Milinić</div>
+        <div class="tag">UI / UX DESIGNER</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="graphics">
+
+    <!-- LOGOS -->
+    <div class="gallery-section">
+        <h1>Logos</h1>
+
+        <div class="gallery-wrapper">
+            <button class="nav left" onclick="scrollGallery('logos', -1)"></button>
+
+            <div class="gallery" id="logos">
+                <img src="Logos/logo1.png">
+                <img src="Logos/logo2.png">
+                <img src="Logos/logo3.png">
+                <img src="Logos/logo4.png">
+                <img src="Logos/logo5.png">
+            </div>
+
+            <button class="nav right" onclick="scrollGallery('logos', 1)"></button>
+        </div>
+    </div>
+
+    <!-- POSTERS -->
+    <div class="gallery-section">
+        <h1>Posters</h1>
+
+        <div class="gallery-wrapper">
+            <button class="nav left" onclick="scrollGallery('posters', -1)"></button>
+
+            <div class="gallery" id="posters">
+                <img src="Posters/poster1.jpg">
+                <img src="Posters/poster2.jpg">
+                <img src="Posters/poster3.jpg">
+                
+            </div>
+
+            <button class="nav right" onclick="scrollGallery('posters', 1)"></button>
+        </div>
+    </div>
+
+    <!-- MAGAZINES -->
+    <div class="gallery-section">
+        <h1>Magazines</h1>
+
+        <div class="gallery-wrapper">
+            <button class="nav left" onclick="scrollGallery('magazines', -1)"></button>
+
+            <div class="gallery" id="magazines">
+                <img src="Magazines/mag1.jpg">
+                <img src="Magazines/mag2.jpg">
+                <img src="Magazines/mag3.jpg">
+                <img src="Magazines/mag4.jpg">
+                <img src="Magazines/mag5.jpg">
+                <img src="Magazines/mag6.jpg">
+            </div>
+
+            <button class="nav right" onclick="scrollGallery('magazines', 1)"></button>
+        </div>
+    </div>
+
+    <!-- VISIT CARDS -->
+    <div class="gallery-section">
+        <h1>Visit Cards</h1>
+
+        <div class="gallery-wrapper">
+            <button class="nav left" onclick="scrollGallery('visits', -1)"></button>
+
+            <div class="gallery" id="visits">
+                <img src="VisitCards/card1.jpg">
+                <img src="VisitCards/card2.jpg">
+                <img src="VisitCards/card3.jpg">
+                <img src="VisitCards/card4.jpg">
+                <img src="VisitCards/card5.jpg">
+                <img src="VisitCards/card6.jpg">
+                <img src="VisitCards/card7.jpg">
+                <img src="VisitCards/card8.jpg">
+                <img src="VisitCards/card9.jpg">
+                <img src="VisitCards/card10.jpg">
+                <img src="VisitCards/card11.jpg">
+                <img src="VisitCards/card12.jpg">
+                <img src="VisitCards/card13.jpg">
+                <img src="VisitCards/card14.jpg">
+                <img src="VisitCards/card15.jpg">
+                <img src="VisitCards/card16.jpg">
+                <img src="VisitCards/card17.jpg">
+                <img src="VisitCards/card18.jpg">
+                <img src="VisitCards/card19.jpg">
+                <img src="VisitCards/card20.jpg">
+            </div>
+
+            <button class="nav right" onclick="scrollGallery('visits', 1)"></button>
+        </div>
+    </div>
+
+</section>
+
+<script>
+function scrollGallery(id, direction){
+    const container = document.getElementById(id);
+
+    if(!container){
+        console.error("Gallery not found:", id);
+        return;
+    }
+
+    const img = container.querySelector("img");
+    const scrollAmount = img.offsetWidth;
+
+    container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
