@@ -415,19 +415,10 @@ button:hover{
 /* CONTACT SECTION */
 
 
-.contact{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:140px 8% 80px;
-    gap:60px;
-}
+
 
 /* intro text */
-.contact-intro{
-    max-width:600px;
-}
+
 
 .contact-intro h1{
     font-size:4rem;
@@ -441,11 +432,7 @@ button:hover{
 }
 
 /* grid container */
-.contact-grid {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+
 
 .contact-card {
     min-width: 220px;
@@ -641,8 +628,8 @@ button:hover{
 
 
 
-/* ================= MOBILE RESPONSIVE FIX ================= */
 
+/* ================= TABLET (<=1024px) ================= */
 @media (max-width: 1024px) {
 
     h1 {
@@ -651,6 +638,7 @@ button:hover{
 
     .hero {
         padding-left: 5%;
+        height: auto;
     }
 
     nav {
@@ -660,12 +648,7 @@ button:hover{
     .project {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .project-media img {
-        width: 100%;
-        height: auto;
-        max-width: 320px;
+        gap: 40px;
     }
 
     .contact-grid {
@@ -695,54 +678,187 @@ button:hover{
     }
 }
 
+
+/* ================= MOBILE (<=768px) ================= */
 @media (max-width: 768px) {
 
+
+
+
+    .contact-grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }   
+
+    /* HEADER */
     header {
-        flex-direction: column;
-        gap: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
         padding: 15px 5%;
+        flex-direction: column;
+        gap: 8px;
+
+        background: rgba(2,3,13,0.65);
+        backdrop-filter: blur(12px);
+
+        z-index: 999;
     }
 
     nav {
-        gap: 15px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    h1 {
-        font-size: 2.3rem;
-    }
-
+    /* HERO (INDEX FIX) */
     .hero {
-        padding: 140px 5% 60px;
+        min-height: 100vh;
+        height: auto;
+        padding: 140px 5% 80px;
+        align-items: flex-start;
     }
 
+    .content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    button {
+        padding: 14px 24px;
+        font-size: 15px;
+        border-radius: 12px;
+        width: auto;
+    }
+
+    /* BLOBS */
+    .blob {
+        filter: blur(45px);
+        opacity: 0.7;
+    }
+
+    .blob1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .blob2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blob3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* FLOATING CARDS OFF */
+    .floating-card {
+        display: none;
+    }
+
+    /* PROJECT SWIPE CAROUSEL */
     .project {
         flex-direction: column;
         gap: 30px;
     }
 
     .project-media {
-        justify-content: center;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 0;
     }
 
+    .project-media img {
+        flex: 0 0 85%;
+        max-width: 85%;
+        height: auto;
+
+        scroll-snap-align: center;
+
+        margin-right: 15px;
+        border-radius: 16px;
+    }
+
+    .project-media::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-media {
+        scrollbar-width: none;
+    }
+
+    /* ABOUT */
     .about {
         flex-direction: column;
+        height: auto;
     }
 
+    /* CONTACT */
     .contact-grid {
         flex-direction: column;
+        gap: 15px;
     }
 
+    /* GRAPHICS */
     .gallery-wrapper {
         flex-direction: column;
     }
-
-    .floating-card {
-        display: none;
-    }
 }
 
+.contact {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-intro {
+    text-align: center;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+
+
+
+/* ================= SMALL MOBILE (<=480px) ================= */
 @media (max-width: 480px) {
 
     h1 {
@@ -753,16 +869,16 @@ button:hover{
         font-size: 16px;
     }
 
-    button {
-        width: 100%;
-    }
-
     .logo {
         font-size: 32px;
     }
 
     .tag {
         font-size: 12px;
+    }
+
+    button {
+        width: 100%;
     }
 
     .project-text h2 {
