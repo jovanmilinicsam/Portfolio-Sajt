@@ -1,58 +1,269 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jovan Milinić — UI / UX Designer</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Jovan Milinić — UI/UX designer focused on digital products, interfaces and visual experiences."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
 </head>
-<body>
+
+
+<body class="home-page">
+
 
 <header>
-    <div class="brand">
-        <div class="logo">Jovan Milinić</div>
-        <div class="tag">UI / UX DESIGNER</div>
-    </div>
+
+    <a
+        href="index.html"
+        class="brand"
+    >
+
+        <div class="logo">
+            Jovan Milinić
+        </div>
+
+        <div class="tag">
+            UI / UX DESIGNER
+        </div>
+
+    </a>
+
 
     <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="graphics.html">Graphics</a>
-    <a href="contact.html">Contact</a>
-</nav>
+
+        <a
+            href="index.html"
+            class="active"
+            aria-current="page"
+        >
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="projects.html">
+            Projects
+        </a>
+
+        <a href="graphics.html">
+            Graphics
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
 </header>
 
-<section class="hero">
 
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
-    <div class="blob blob3"></div>
 
-    <div class="content">
+<main>
 
-        
+<section class="home-hero">
 
-        <h1>
-            Designing<br>
-            digital <span>experiences</span><br>
-            that feel alive.
+
+    <div class="home-copy">
+
+
+        <div class="eyebrow">
+            Portfolio / 2026
+        </div>
+
+
+        <h1 class="home-title">
+
+            Digital
+
+            <span class="soft">
+                designer
+            </span>
+
+            crafting
+
+            <span class="gradient-text">
+                experiences.
+            </span>
+
         </h1>
 
-        <p>
-            I create intuitive interfaces and meaningful interactions
-            that connect people and products.
+
+        <p class="home-description">
+
+            I design intuitive digital products,
+            interfaces and visual systems that combine
+            clear functionality with strong visual identity.
+
         </p>
 
-        <button onclick="window.location.href='projects.html'">
-            View My Work
-        </button>
+
+        <div class="home-actions">
+
+            <a
+                href="projects.html"
+                class="primary-cta"
+            >
+
+                Explore my work
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="secondary-cta"
+            >
+                Let's work together
+            </a>
+
+        </div>
+
+
+
+        <div class="home-meta">
+
+
+            <div class="meta-item">
+
+                <span class="meta-value">
+                    UI / UX
+                </span>
+
+                <span class="meta-label">
+                    Product Design
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-value">
+                    3D
+                </span>
+
+                <span class="meta-label">
+                    Visual Design
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-value">
+                    Motion
+                </span>
+
+                <span class="meta-label">
+                    Interaction
+                </span>
+
+            </div>
+
+
+        </div>
 
     </div>
 
-    
+
+
+    <div class="model-stage">
+
+
+        <div class="model-ring"></div>
+
+
+        <model-viewer
+
+            src="modeli/Man Working at PC Scene.glb"
+
+            alt="3D portfolio model"
+
+            camera-controls
+
+            auto-rotate
+
+            rotation-per-second="12deg"
+
+            interaction-prompt="none"
+
+            shadow-intensity="1"
+
+            exposure="1"
+
+            environment-image="neutral"
+
+        >
+        </model-viewer>
+
+
+        <div class="model-label">
+
+            <span class="model-label-dot"></span>
+
+            Interactive 3D
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="home-rail">
+
+        <span>
+            Selected digital work
+        </span>
+
+
+        <span class="scroll-indicator">
+
+            Scroll
+
+            <span class="scroll-line"></span>
+
+        </span>
+
+    </div>
+
 
 </section>
 
+</main>
+
+
 </body>
+
 </html>
