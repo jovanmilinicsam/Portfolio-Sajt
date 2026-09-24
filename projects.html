@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -12,6 +11,9 @@
     >
 
     <title>Projects — Jovan Milinić</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/logo.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="./logo/logo.png?v=2">
+    <link rel="apple-touch-icon" href="./logo/logo.png?v=2">
 
     <meta
         name="description"
@@ -26,7 +28,10 @@
 </head>
 
 
-<body class="projects-page">
+<body
+    class="projects-page"
+    data-page="projects"
+>
 
 
 <header>
@@ -40,40 +45,88 @@
             Jovan Milinić
         </div>
 
-        <div class="tag">
+        <div
+            class="tag"
+            data-i18n="brand.role"
+        >
             UI / UX DESIGNER
         </div>
 
     </a>
 
 
-    <nav>
+    <div class="header-actions">
 
-        <a href="index.html">
-            Home
-        </a>
+        <nav>
 
-        <a href="about.html">
-            About
-        </a>
+            <a
+                href="index.html"
+                data-i18n="nav.home"
+            >
+                Home
+            </a>
 
-        <a
-            href="projects.html"
-            class="active"
-            aria-current="page"
+            <a
+                href="about.html"
+                data-i18n="nav.about"
+            >
+                About
+            </a>
+
+            <a
+                href="projects.html"
+                class="active"
+                aria-current="page"
+                data-i18n="nav.projects"
+            >
+                Projects
+            </a>
+
+            <a
+                href="graphics.html"
+                data-i18n="nav.graphics"
+            >
+                Graphics
+            </a>
+
+            <a
+                href="contact.html"
+                data-i18n="nav.contact"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div
+            class="language-switcher"
+            aria-label="Language selector"
         >
-            Projects
-        </a>
 
-        <a href="graphics.html">
-            Graphics
-        </a>
+            <button
+                type="button"
+                data-language="en"
+                aria-label="English"
+            >
+                EN
+            </button>
 
-        <a href="contact.html">
-            Contact
-        </a>
+            <span class="language-divider">
+                /
+            </span>
 
-    </nav>
+            <button
+                type="button"
+                data-language="sr"
+                aria-label="Srpski"
+            >
+                SR
+            </button>
+
+        </div>
+
+    </div>
 
 </header>
 
@@ -88,29 +141,35 @@
 
 <section class="projects-intro">
 
-    <div class="eyebrow">
+    <div
+        class="eyebrow"
+        data-i18n="projects.eyebrow"
+    >
         Selected work
     </div>
 
 
     <h1>
 
-        Projects
+        <span data-i18n="projects.title.first">
+            Projects
+        </span>
 
-        <span>
+        <span data-i18n="projects.title.second">
             & case studies.
         </span>
 
     </h1>
 
 
-    <p class="projects-intro-text">
-
+    <p
+        class="projects-intro-text"
+        data-i18n="projects.description"
+    >
         A selection of product design, user experience,
         interface and visual design projects.
         Scroll through each case study to explore
         the process and final outcome.
-
     </p>
 
 </section>
@@ -130,40 +189,50 @@
             01 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 TrackTail
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project1.description"
+            >
                 TrackTail is a mobile application designed to make
                 everyday pet care simpler and more organized.
                 The interface brings together pet profiles, activity,
                 nutrition, location, camera features and account
                 management in one unified experience.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project1.tag1"
+                >
                     UX / UI
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project1.tag2"
+                >
                     Mobile App
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project1.tag3"
+                >
                     Pet Care
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project1.tag4"
+                >
                     Figma
                 </span>
 
@@ -174,14 +243,12 @@
     </div>
 
 
-
     <div class="project-deck-wrap phone-project">
 
         <div
             class="project-deck phone-deck"
             id="project1"
         >
-
 
             <div class="project-slide phone-slide">
 
@@ -191,7 +258,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">01</span>
+                <span class="slide-number">
+                    01
+                </span>
 
             </div>
 
@@ -204,7 +273,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">02</span>
+                <span class="slide-number">
+                    02
+                </span>
 
             </div>
 
@@ -217,7 +288,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">03</span>
+                <span class="slide-number">
+                    03
+                </span>
 
             </div>
 
@@ -230,7 +303,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">04</span>
+                <span class="slide-number">
+                    04
+                </span>
 
             </div>
 
@@ -243,7 +318,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">05</span>
+                <span class="slide-number">
+                    05
+                </span>
 
             </div>
 
@@ -256,7 +333,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">06</span>
+                <span class="slide-number">
+                    06
+                </span>
 
             </div>
 
@@ -269,7 +348,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">07</span>
+                <span class="slide-number">
+                    07
+                </span>
 
             </div>
 
@@ -282,7 +363,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">08</span>
+                <span class="slide-number">
+                    08
+                </span>
 
             </div>
 
@@ -295,7 +378,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">09</span>
+                <span class="slide-number">
+                    09
+                </span>
 
             </div>
 
@@ -308,13 +393,13 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">10</span>
+                <span class="slide-number">
+                    10
+                </span>
 
             </div>
 
-
         </div>
-
 
 
         <div class="deck-controls">
@@ -327,6 +412,7 @@
                 class="deck-btn"
                 onclick="moveDeck('project1', -1)"
                 aria-label="Previous TrackTail screen"
+                data-i18n-aria-label="project1.prev"
             >
                 ←
             </button>
@@ -335,6 +421,7 @@
                 class="deck-btn"
                 onclick="moveDeck('project1', 1)"
                 aria-label="Next TrackTail screen"
+                data-i18n-aria-label="project1.next"
             >
                 →
             </button>
@@ -360,16 +447,16 @@
             02 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 PartnerBridge
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project2.description"
+            >
                 PartnerBridge is a digital platform designed
                 to help companies discover suitable business
                 partners quickly and efficiently.
@@ -377,23 +464,43 @@
                 The experience brings together company profiles,
                 collaboration opportunities and partner discovery
                 through a clear and structured mobile interface.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">UX / UI</span>
-                <span class="project-tag">Mobile App</span>
-                <span class="project-tag">B2B</span>
-                <span class="project-tag">Figma</span>
+                <span
+                    class="project-tag"
+                    data-i18n="project2.tag1"
+                >
+                    UX / UI
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project2.tag2"
+                >
+                    Mobile App
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project2.tag3"
+                >
+                    B2B
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project2.tag4"
+                >
+                    Figma
+                </span>
 
             </div>
 
         </div>
 
     </div>
-
 
 
     <div class="project-deck-wrap mixed-project">
@@ -403,7 +510,6 @@
             id="project2"
         >
 
-
             <div class="project-slide mixed-wide-slide">
 
                 <img
@@ -412,7 +518,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">01</span>
+                <span class="slide-number">
+                    01
+                </span>
 
             </div>
 
@@ -425,7 +533,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">02</span>
+                <span class="slide-number">
+                    02
+                </span>
 
             </div>
 
@@ -438,7 +548,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">03</span>
+                <span class="slide-number">
+                    03
+                </span>
 
             </div>
 
@@ -451,7 +563,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">04</span>
+                <span class="slide-number">
+                    04
+                </span>
 
             </div>
 
@@ -464,7 +578,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">05</span>
+                <span class="slide-number">
+                    05
+                </span>
 
             </div>
 
@@ -477,7 +593,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">06</span>
+                <span class="slide-number">
+                    06
+                </span>
 
             </div>
 
@@ -490,7 +608,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">07</span>
+                <span class="slide-number">
+                    07
+                </span>
 
             </div>
 
@@ -503,7 +623,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">08</span>
+                <span class="slide-number">
+                    08
+                </span>
 
             </div>
 
@@ -516,7 +638,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">09</span>
+                <span class="slide-number">
+                    09
+                </span>
 
             </div>
 
@@ -529,7 +653,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">10</span>
+                <span class="slide-number">
+                    10
+                </span>
 
             </div>
 
@@ -542,7 +668,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">11</span>
+                <span class="slide-number">
+                    11
+                </span>
 
             </div>
 
@@ -555,13 +683,13 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">12</span>
+                <span class="slide-number">
+                    12
+                </span>
 
             </div>
 
-
         </div>
-
 
 
         <div class="deck-controls">
@@ -573,6 +701,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project2', -1)"
+                aria-label="Previous PartnerBridge screen"
+                data-i18n-aria-label="project2.prev"
             >
                 ←
             </button>
@@ -580,6 +710,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project2', 1)"
+                aria-label="Next PartnerBridge screen"
+                data-i18n-aria-label="project2.next"
             >
                 →
             </button>
@@ -605,16 +737,16 @@
             03 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 FitMi
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project3.description"
+            >
                 FitMi is an all-in-one fitness platform designed
                 to bring essential parts of a healthy lifestyle
                 into one digital experience.
@@ -622,16 +754,37 @@
                 The mobile interface focuses on clear navigation,
                 fitness-related content and quick access to useful
                 services through a bold visual system.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">UX / UI</span>
-                <span class="project-tag">Fitness</span>
-                <span class="project-tag">Mobile App</span>
-                <span class="project-tag">Figma</span>
+                <span
+                    class="project-tag"
+                    data-i18n="project3.tag1"
+                >
+                    UX / UI
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project3.tag2"
+                >
+                    Fitness
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project3.tag3"
+                >
+                    Mobile App
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project3.tag4"
+                >
+                    Figma
+                </span>
 
             </div>
 
@@ -640,13 +793,41 @@
     </div>
 
 
-
     <div class="project-deck-wrap phone-project">
 
         <div
             class="project-deck phone-deck"
             id="project3"
         >
+
+            <div class="project-slide phone-slide fitmi-cover-slide">
+
+                <img
+                    src="projekat3/Naslovna.png"
+                    alt="FitMi project cover"
+                    loading="lazy"
+                >
+
+                <span class="slide-number">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="project-slide phone-slide fitmi-mockup-slide">
+
+                <img
+                    src="projekat3/mockup.png"
+                    alt="FitMi application mockup"
+                    loading="lazy"
+                >
+
+                <span class="slide-number">
+                    02
+                </span>
+
+            </div>
 
 
             <div class="project-slide phone-slide">
@@ -657,7 +838,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">01</span>
+                <span class="slide-number">
+                    03
+                </span>
 
             </div>
 
@@ -670,7 +853,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">02</span>
+                <span class="slide-number">
+                    04
+                </span>
 
             </div>
 
@@ -683,24 +868,26 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">03</span>
+                <span class="slide-number">
+                    05
+                </span>
 
             </div>
 
-
         </div>
-
 
 
         <div class="deck-controls">
 
             <span class="deck-progress">
-                01 / 03
+                01 / 05
             </span>
 
             <button
                 class="deck-btn"
                 onclick="moveDeck('project3', -1)"
+                aria-label="Previous FitMi screen"
+                data-i18n-aria-label="project3.prev"
             >
                 ←
             </button>
@@ -708,6 +895,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project3', 1)"
+                aria-label="Next FitMi screen"
+                data-i18n-aria-label="project3.next"
             >
                 →
             </button>
@@ -733,16 +922,16 @@
             04 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 Tempora
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project4.description"
+            >
                 Tempora is a modern digital watch store built
                 around a clean visual hierarchy and product-focused
                 shopping experience.
@@ -750,23 +939,43 @@
                 The project combines product presentation,
                 storytelling and interface design into a minimal
                 e-commerce system.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">Web Design</span>
-                <span class="project-tag">E-commerce</span>
-                <span class="project-tag">UI / UX</span>
-                <span class="project-tag">Product Design</span>
+                <span
+                    class="project-tag"
+                    data-i18n="project4.tag1"
+                >
+                    Web Design
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project4.tag2"
+                >
+                    E-commerce
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project4.tag3"
+                >
+                    UI / UX
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project4.tag4"
+                >
+                    Product Design
+                </span>
 
             </div>
 
         </div>
 
     </div>
-
 
 
     <div class="project-deck-wrap presentation-project">
@@ -776,7 +985,6 @@
             id="project4"
         >
 
-
             <div class="project-slide presentation-slide">
 
                 <img
@@ -785,7 +993,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">01</span>
+                <span class="slide-number">
+                    01
+                </span>
 
             </div>
 
@@ -798,7 +1008,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">02</span>
+                <span class="slide-number">
+                    02
+                </span>
 
             </div>
 
@@ -811,7 +1023,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">03</span>
+                <span class="slide-number">
+                    03
+                </span>
 
             </div>
 
@@ -824,7 +1038,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">04</span>
+                <span class="slide-number">
+                    04
+                </span>
 
             </div>
 
@@ -837,7 +1053,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">05</span>
+                <span class="slide-number">
+                    05
+                </span>
 
             </div>
 
@@ -850,7 +1068,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">06</span>
+                <span class="slide-number">
+                    06
+                </span>
 
             </div>
 
@@ -863,13 +1083,13 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">07</span>
+                <span class="slide-number">
+                    07
+                </span>
 
             </div>
 
-
         </div>
-
 
 
         <div class="deck-controls">
@@ -881,6 +1101,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project4', -1)"
+                aria-label="Previous Tempora screen"
+                data-i18n-aria-label="project4.prev"
             >
                 ←
             </button>
@@ -888,6 +1110,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project4', 1)"
+                aria-label="Next Tempora screen"
+                data-i18n-aria-label="project4.next"
             >
                 →
             </button>
@@ -913,39 +1137,59 @@
             05 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 RsTracks
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project5.description"
+            >
                 RsTracks is a mobile experience centered around
                 automotive and track-related activities.
 
                 The interface guides users through the experience
                 from the welcome screen and vehicle selection
                 to track information, reservation and confirmation.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">UX / UI</span>
-                <span class="project-tag">Mobile App</span>
-                <span class="project-tag">Automotive</span>
-                <span class="project-tag">Reservation</span>
+                <span
+                    class="project-tag"
+                    data-i18n="project5.tag1"
+                >
+                    UX / UI
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project5.tag2"
+                >
+                    Mobile App
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project5.tag3"
+                >
+                    Automotive
+                </span>
+
+                <span
+                    class="project-tag"
+                    data-i18n="project5.tag4"
+                >
+                    Reservation
+                </span>
 
             </div>
 
         </div>
 
     </div>
-
 
 
     <div class="project-deck-wrap phone-project">
@@ -955,7 +1199,6 @@
             id="project5"
         >
 
-
             <div class="project-slide phone-slide">
 
                 <img
@@ -964,7 +1207,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">01</span>
+                <span class="slide-number">
+                    01
+                </span>
 
             </div>
 
@@ -977,7 +1222,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">02</span>
+                <span class="slide-number">
+                    02
+                </span>
 
             </div>
 
@@ -990,7 +1237,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">03</span>
+                <span class="slide-number">
+                    03
+                </span>
 
             </div>
 
@@ -1003,7 +1252,9 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">04</span>
+                <span class="slide-number">
+                    04
+                </span>
 
             </div>
 
@@ -1016,13 +1267,13 @@
                     loading="lazy"
                 >
 
-                <span class="slide-number">05</span>
+                <span class="slide-number">
+                    05
+                </span>
 
             </div>
 
-
         </div>
-
 
 
         <div class="deck-controls">
@@ -1034,6 +1285,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project5', -1)"
+                aria-label="Previous RsTracks screen"
+                data-i18n-aria-label="project5.prev"
             >
                 ←
             </button>
@@ -1041,6 +1294,8 @@
             <button
                 class="deck-btn"
                 onclick="moveDeck('project5', 1)"
+                aria-label="Next RsTracks screen"
+                data-i18n-aria-label="project5.next"
             >
                 →
             </button>
@@ -1066,16 +1321,16 @@
             06 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 GoDog
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project6.description"
+            >
                 GoDog is a redesign of an existing landing page,
                 created with a stronger focus on visual hierarchy,
                 clarity and a more contemporary web experience.
@@ -1083,25 +1338,35 @@
                 The redesign reorganizes the original content
                 and introduces a cleaner structure while keeping
                 the purpose of the page immediately understandable.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project6.tag1"
+                >
                     Web Design
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project6.tag2"
+                >
                     Redesign
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project6.tag3"
+                >
                     UI
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project6.tag4"
+                >
                     Landing Page
                 </span>
 
@@ -1112,16 +1377,18 @@
     </div>
 
 
+    <div class="project-deck-wrap godog-project">
 
-    <div class="single-project">
+        <div
+            class="project-deck godog-deck"
+            id="project6"
+        >
 
-        <div class="single-project-stage">
-
-            <div class="single-tall-slide">
+            <div class="project-slide godog-cover-slide">
 
                 <img
-                    src="projekat6/godog.png"
-                    alt="GoDog landing page redesign"
+                    src="projekat6/Naslovna.png"
+                    alt="GoDog project cover"
                     loading="lazy"
                 >
 
@@ -1130,6 +1397,78 @@
                 </span>
 
             </div>
+
+
+            <div class="project-slide godog-page-slide">
+
+                <img
+                    src="projekat6/godog.png"
+                    alt="GoDog landing page redesign"
+                    loading="lazy"
+                >
+
+                <span class="slide-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="project-slide godog-mockup-slide">
+
+                <img
+                    src="projekat6/mockup.png"
+                    alt="GoDog laptop mockup"
+                    loading="lazy"
+                >
+
+                <span class="slide-number">
+                    03
+                </span>
+
+            </div>
+
+
+            <div class="project-slide godog-mockup-slide">
+
+                <img
+                    src="projekat6/Mockup2.png"
+                    alt="GoDog desktop mockup"
+                    loading="lazy"
+                >
+
+                <span class="slide-number">
+                    04
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="deck-controls">
+
+            <span class="deck-progress">
+                01 / 04
+            </span>
+
+            <button
+                class="deck-btn"
+                onclick="moveDeck('project6', -1)"
+                aria-label="Previous GoDog slide"
+                data-i18n-aria-label="project6.prev"
+            >
+                ←
+            </button>
+
+            <button
+                class="deck-btn"
+                onclick="moveDeck('project6', 1)"
+                aria-label="Next GoDog slide"
+                data-i18n-aria-label="project6.next"
+            >
+                →
+            </button>
 
         </div>
 
@@ -1152,16 +1491,16 @@
             07 / 07
         </div>
 
-
         <div>
 
             <h2 class="case-title">
                 Papilon
             </h2>
 
-
-            <p class="case-description">
-
+            <p
+                class="case-description"
+                data-i18n="project7.description"
+            >
                 Papilon is a first-page concept designed for
                 a startup, with emphasis on establishing a strong
                 first impression and clear visual identity.
@@ -1169,25 +1508,35 @@
                 The interface uses a cinematic hero composition
                 and minimal content structure to introduce the
                 startup in a focused and visually distinctive way.
-
             </p>
-
 
             <div class="project-tags">
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project7.tag1"
+                >
                     Startup
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project7.tag2"
+                >
                     Web Design
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project7.tag3"
+                >
                     Landing Page
                 </span>
 
-                <span class="project-tag">
+                <span
+                    class="project-tag"
+                    data-i18n="project7.tag4"
+                >
                     UI
                 </span>
 
@@ -1196,7 +1545,6 @@
         </div>
 
     </div>
-
 
 
     <div class="single-project">
@@ -1230,7 +1578,6 @@
 
 <script>
 
-
 /* =========================================================
    GET CURRENT SLIDE
 ========================================================= */
@@ -1239,48 +1586,38 @@ function getCurrentSlideIndex(deck){
 
     const slides =
         Array.from(
-            deck.querySelectorAll('.project-slide')
+            deck.querySelectorAll(".project-slide")
         );
-
 
     if(!slides.length){
         return 0;
     }
 
-
     const deckRect =
         deck.getBoundingClientRect();
-
 
     const deckCenter =
         deckRect.left +
         deckRect.width / 2;
 
-
     let closestIndex = 0;
-
     let closestDistance = Infinity;
-
 
     slides.forEach(
         (slide,index) => {
 
-
             const rect =
                 slide.getBoundingClientRect();
-
 
             const slideCenter =
                 rect.left +
                 rect.width / 2;
-
 
             const distance =
                 Math.abs(
                     deckCenter -
                     slideCenter
                 );
-
 
             if(
                 distance <
@@ -1298,11 +1635,9 @@ function getCurrentSlideIndex(deck){
         }
     );
 
-
     return closestIndex;
 
 }
-
 
 
 /* =========================================================
@@ -1314,30 +1649,24 @@ function moveDeck(id,direction){
     const deck =
         document.getElementById(id);
 
-
     if(!deck){
         return;
     }
 
-
     const slides =
         Array.from(
-            deck.querySelectorAll('.project-slide')
+            deck.querySelectorAll(".project-slide")
         );
-
 
     if(!slides.length){
         return;
     }
 
-
     const currentIndex =
         getCurrentSlideIndex(deck);
 
-
     let nextIndex =
         currentIndex + direction;
-
 
     nextIndex =
         Math.max(
@@ -1348,29 +1677,20 @@ function moveDeck(id,direction){
             )
         );
 
-
     const target =
         slides[nextIndex];
-
 
     const targetLeft =
         target.offsetLeft -
         deck.clientWidth / 2 +
         target.offsetWidth / 2;
 
-
     deck.scrollTo({
-
-        left:
-            targetLeft,
-
-        behavior:
-            'smooth'
-
+        left: targetLeft,
+        behavior: "smooth"
     });
 
 }
-
 
 
 /* =========================================================
@@ -1378,27 +1698,27 @@ function moveDeck(id,direction){
 ========================================================= */
 
 document
-.querySelectorAll('.project-deck')
+.querySelectorAll(".project-deck")
 .forEach(deck => {
-
 
     const wrapper =
         deck.closest(
-            '.project-deck-wrap'
+            ".project-deck-wrap"
         );
 
+    if(!wrapper){
+        return;
+    }
 
     const progress =
         wrapper.querySelector(
-            '.deck-progress'
+            ".deck-progress"
         );
-
 
     const slides =
         deck.querySelectorAll(
-            '.project-slide'
+            ".project-slide"
         );
-
 
     if(
         !progress ||
@@ -1408,42 +1728,37 @@ document
     }
 
 
-
     function updateProgress(){
-
 
         const currentIndex =
             getCurrentSlideIndex(deck);
-
 
         progress.textContent =
             String(
                 currentIndex + 1
             ).padStart(
                 2,
-                '0'
+                "0"
             )
             +
-            ' / '
+            " / "
             +
             String(
                 slides.length
             ).padStart(
                 2,
-                '0'
+                "0"
             );
 
     }
-
 
 
     let ticking = false;
 
 
     deck.addEventListener(
-        'scroll',
+        "scroll",
         () => {
-
 
             if(!ticking){
 
@@ -1457,7 +1772,6 @@ document
                     }
                 );
 
-
                 ticking = true;
 
             }
@@ -1470,7 +1784,7 @@ document
 
 
     window.addEventListener(
-        'resize',
+        "resize",
         updateProgress
     );
 
@@ -1479,9 +1793,10 @@ document
 
 });
 
-
 </script>
 
+
+<script src="Language.js"></script>
 
 </body>
 

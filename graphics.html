@@ -1,142 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Graphics</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Graphics — Jovan Milinić</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/logo.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="./logo/logo.png?v=2">
+    <link rel="apple-touch-icon" href="./logo/logo.png?v=2">
+
+    <meta
+        name="description"
+        content="Graphic design work by Jovan Milinić including logos, posters, magazines and visual design projects."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
-<body>
+
+<body
+    class="graphics-page"
+    data-page="graphics"
+>
+
 
 <header>
-    <div class="brand">
-        <div class="logo">Jovan Milinić</div>
-        <div class="tag">UI / UX DESIGNER</div>
+
+    <a
+        href="index.html"
+        class="brand"
+    >
+
+        <div class="logo">
+            Jovan Milinić
+        </div>
+
+        <div
+            class="tag"
+            data-i18n="brand.role"
+        >
+            UI / UX DESIGNER
+        </div>
+
+    </a>
+
+
+    <div class="header-actions">
+
+        <nav>
+
+            <a
+                href="index.html"
+                data-i18n="nav.home"
+            >
+                Home
+            </a>
+
+            <a
+                href="about.html"
+                data-i18n="nav.about"
+            >
+                About
+            </a>
+
+            <a
+                href="projects.html"
+                data-i18n="nav.projects"
+            >
+                Projects
+            </a>
+
+            <a
+                href="graphics.html"
+                class="active"
+                aria-current="page"
+                data-i18n="nav.graphics"
+            >
+                Graphics
+            </a>
+
+            <a
+                href="contact.html"
+                data-i18n="nav.contact"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div
+            class="language-switcher"
+            aria-label="Language selector"
+        >
+
+            <button
+                type="button"
+                data-language="en"
+                aria-label="English"
+            >
+                EN
+            </button>
+
+            <span class="language-divider">
+                /
+            </span>
+
+            <button
+                type="button"
+                data-language="sr"
+                aria-label="Srpski"
+            >
+                SR
+            </button>
+
+        </div>
+
     </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 </header>
+
+
 
 <section class="graphics">
 
+
     <!-- LOGOS -->
+
     <div class="gallery-section">
-        <h1>Logos</h1>
+
+        <h1 data-i18n="graphics.logos">
+            Logos
+        </h1>
+
 
         <div class="gallery-wrapper">
-            <button class="nav left" onclick="scrollGallery('logos', -1)"></button>
 
-            <div class="gallery" id="logos">
-                <img src="Logos/logo1.png">
-                <img src="Logos/logo2.png">
-                <img src="Logos/logo3.png">
-                <img src="Logos/logo4.png">
-                <img src="Logos/logo5.png">
+            <button
+                class="nav left"
+                onclick="scrollGallery('logos', -1)"
+                aria-label="Previous logo"
+            >
+            </button>
+
+
+            <div
+                class="gallery"
+                id="logos"
+            >
+
+                <img
+                    src="Logos/logo1.png"
+                    alt="Logo design 1"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Logos/logo2.png"
+                    alt="Logo design 2"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Logos/logo3.png"
+                    alt="Logo design 3"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Logos/logo4.png"
+                    alt="Logo design 4"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Logos/logo5.png"
+                    alt="Logo design 5"
+                    loading="lazy"
+                >
+
             </div>
 
-            <button class="nav right" onclick="scrollGallery('logos', 1)"></button>
+
+            <button
+                class="nav right"
+                onclick="scrollGallery('logos', 1)"
+                aria-label="Next logo"
+            >
+            </button>
+
         </div>
+
     </div>
+
+
 
     <!-- POSTERS -->
+
     <div class="gallery-section">
-        <h1>Posters</h1>
+
+        <h1 data-i18n="graphics.posters">
+            Posters
+        </h1>
+
 
         <div class="gallery-wrapper">
-            <button class="nav left" onclick="scrollGallery('posters', -1)"></button>
 
-            <div class="gallery" id="posters">
-                <img src="Posters/poster1.jpg">
-                <img src="Posters/poster2.jpg">
-                <img src="Posters/poster3.jpg">
-                
+            <button
+                class="nav left"
+                onclick="scrollGallery('posters', -1)"
+                aria-label="Previous poster"
+            >
+            </button>
+
+
+            <div
+                class="gallery"
+                id="posters"
+            >
+
+                <img
+                    src="Posters/poster1.jpg"
+                    alt="Poster design 1"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Posters/poster2.jpg"
+                    alt="Poster design 2"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Posters/poster3.jpg"
+                    alt="Poster design 3"
+                    loading="lazy"
+                >
+
             </div>
 
-            <button class="nav right" onclick="scrollGallery('posters', 1)"></button>
+
+            <button
+                class="nav right"
+                onclick="scrollGallery('posters', 1)"
+                aria-label="Next poster"
+            >
+            </button>
+
         </div>
+
     </div>
+
+
 
     <!-- MAGAZINES -->
+
     <div class="gallery-section">
-        <h1>Magazines</h1>
+
+        <h1 data-i18n="graphics.magazines">
+            Magazines
+        </h1>
+
 
         <div class="gallery-wrapper">
-            <button class="nav left" onclick="scrollGallery('magazines', -1)"></button>
 
-            <div class="gallery" id="magazines">
-                <img src="Magazines/mag1.jpg">
-                <img src="Magazines/mag2.jpg">
-                <img src="Magazines/mag3.jpg">
-                <img src="Magazines/mag4.jpg">
-                <img src="Magazines/mag5.jpg">
-                <img src="Magazines/mag6.jpg">
+            <button
+                class="nav left"
+                onclick="scrollGallery('magazines', -1)"
+                aria-label="Previous magazine"
+            >
+            </button>
+
+
+            <div
+                class="gallery"
+                id="magazines"
+            >
+
+                <img
+                    src="Magazines/mag1.jpg"
+                    alt="Magazine design 1"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Magazines/mag2.jpg"
+                    alt="Magazine design 2"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Magazines/mag3.jpg"
+                    alt="Magazine design 3"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Magazines/mag4.jpg"
+                    alt="Magazine design 4"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Magazines/mag5.jpg"
+                    alt="Magazine design 5"
+                    loading="lazy"
+                >
+
+                <img
+                    src="Magazines/mag6.jpg"
+                    alt="Magazine design 6"
+                    loading="lazy"
+                >
+
             </div>
 
-            <button class="nav right" onclick="scrollGallery('magazines', 1)"></button>
+
+            <button
+                class="nav right"
+                onclick="scrollGallery('magazines', 1)"
+                aria-label="Next magazine"
+            >
+            </button>
+
         </div>
+
     </div>
+
+
 
     <!-- VISIT CARDS -->
+
     <div class="gallery-section">
-        <h1>Visit Cards</h1>
+
+        <h1 data-i18n="graphics.visitCards">
+            Visit Cards
+        </h1>
+
 
         <div class="gallery-wrapper">
-            <button class="nav left" onclick="scrollGallery('visits', -1)"></button>
 
-            <div class="gallery" id="visits">
-                <img src="VisitCards/card1.jpg">
-                <img src="VisitCards/card2.jpg">
-                <img src="VisitCards/card3.jpg">
-                <img src="VisitCards/card4.jpg">
-                <img src="VisitCards/card5.jpg">
-                <img src="VisitCards/card6.jpg">
-                <img src="VisitCards/card7.jpg">
-                <img src="VisitCards/card8.jpg">
-                <img src="VisitCards/card9.jpg">
-                <img src="VisitCards/card10.jpg">
-                <img src="VisitCards/card11.jpg">
-                <img src="VisitCards/card12.jpg">
-                <img src="VisitCards/card13.jpg">
-                <img src="VisitCards/card14.jpg">
-                <img src="VisitCards/card15.jpg">
-                <img src="VisitCards/card16.jpg">
-                <img src="VisitCards/card17.jpg">
-                <img src="VisitCards/card18.jpg">
-                <img src="VisitCards/card19.jpg">
-                <img src="VisitCards/card20.jpg">
+            <button
+                class="nav left"
+                onclick="scrollGallery('visits', -1)"
+                aria-label="Previous visit card"
+            >
+            </button>
+
+
+            <div
+                class="gallery"
+                id="visits"
+            >
+
+                <img src="VisitCards/card1.jpg" alt="Visit card 1" loading="lazy">
+                <img src="VisitCards/card2.jpg" alt="Visit card 2" loading="lazy">
+                <img src="VisitCards/card3.jpg" alt="Visit card 3" loading="lazy">
+                <img src="VisitCards/card4.jpg" alt="Visit card 4" loading="lazy">
+                <img src="VisitCards/card5.jpg" alt="Visit card 5" loading="lazy">
+                <img src="VisitCards/card6.jpg" alt="Visit card 6" loading="lazy">
+                <img src="VisitCards/card7.jpg" alt="Visit card 7" loading="lazy">
+                <img src="VisitCards/card8.jpg" alt="Visit card 8" loading="lazy">
+                <img src="VisitCards/card9.jpg" alt="Visit card 9" loading="lazy">
+                <img src="VisitCards/card10.jpg" alt="Visit card 10" loading="lazy">
+                <img src="VisitCards/card11.jpg" alt="Visit card 11" loading="lazy">
+                <img src="VisitCards/card12.jpg" alt="Visit card 12" loading="lazy">
+                <img src="VisitCards/card13.jpg" alt="Visit card 13" loading="lazy">
+                <img src="VisitCards/card14.jpg" alt="Visit card 14" loading="lazy">
+                <img src="VisitCards/card15.jpg" alt="Visit card 15" loading="lazy">
+                <img src="VisitCards/card16.jpg" alt="Visit card 16" loading="lazy">
+                <img src="VisitCards/card17.jpg" alt="Visit card 17" loading="lazy">
+                <img src="VisitCards/card18.jpg" alt="Visit card 18" loading="lazy">
+                <img src="VisitCards/card19.jpg" alt="Visit card 19" loading="lazy">
+                <img src="VisitCards/card20.jpg" alt="Visit card 20" loading="lazy">
+
             </div>
 
-            <button class="nav right" onclick="scrollGallery('visits', 1)"></button>
+
+            <button
+                class="nav right"
+                onclick="scrollGallery('visits', 1)"
+                aria-label="Next visit card"
+            >
+            </button>
+
         </div>
+
     </div>
+
 
 </section>
 
+
+
 <script>
-function scrollGallery(id, direction){
-    const container = document.getElementById(id);
+
+function scrollGallery(id,direction){
+
+    const container =
+        document.getElementById(id);
 
     if(!container){
-        console.error("Gallery not found:", id);
+
+        console.error(
+            "Gallery not found:",
+            id
+        );
+
+        return;
+
+    }
+
+
+    const img =
+        container.querySelector("img");
+
+
+    if(!img){
         return;
     }
 
-    const img = container.querySelector("img");
-    const scrollAmount = img.offsetWidth;
+
+    const scrollAmount =
+        img.offsetWidth;
+
 
     container.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
+
+        left:
+            direction *
+            scrollAmount,
+
+        behavior:
+            "smooth"
+
     });
+
 }
+
 </script>
 
+
+<script src="Language.js"></script>
+
 </body>
+
 </html>

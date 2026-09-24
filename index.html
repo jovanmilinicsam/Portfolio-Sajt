@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -12,6 +11,9 @@
     >
 
     <title>Jovan Milinić — UI / UX Designer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/logo.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="./logo/logo.png?v=2">
+    <link rel="apple-touch-icon" href="./logo/logo.png?v=2">
 
     <meta
         name="description"
@@ -31,7 +33,10 @@
 </head>
 
 
-<body class="home-page">
+<body
+    class="home-page"
+    data-page="home"
+>
 
 
 <header>
@@ -45,40 +50,88 @@
             Jovan Milinić
         </div>
 
-        <div class="tag">
+        <div
+            class="tag"
+            data-i18n="brand.role"
+        >
             UI / UX DESIGNER
         </div>
 
     </a>
 
 
-    <nav>
+    <div class="header-actions">
 
-        <a
-            href="index.html"
-            class="active"
-            aria-current="page"
+        <nav>
+
+            <a
+                href="index.html"
+                class="active"
+                aria-current="page"
+                data-i18n="nav.home"
+            >
+                Home
+            </a>
+
+            <a
+                href="about.html"
+                data-i18n="nav.about"
+            >
+                About
+            </a>
+
+            <a
+                href="projects.html"
+                data-i18n="nav.projects"
+            >
+                Projects
+            </a>
+
+            <a
+                href="graphics.html"
+                data-i18n="nav.graphics"
+            >
+                Graphics
+            </a>
+
+            <a
+                href="contact.html"
+                data-i18n="nav.contact"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div
+            class="language-switcher"
+            aria-label="Language selector"
         >
-            Home
-        </a>
 
-        <a href="about.html">
-            About
-        </a>
+            <button
+                type="button"
+                data-language="en"
+                aria-label="English"
+            >
+                EN
+            </button>
 
-        <a href="projects.html">
-            Projects
-        </a>
+            <span class="language-divider">
+                /
+            </span>
 
-        <a href="graphics.html">
-            Graphics
-        </a>
+            <button
+                type="button"
+                data-language="sr"
+                aria-label="Srpski"
+            >
+                SR
+            </button>
 
-        <a href="contact.html">
-            Contact
-        </a>
+        </div>
 
-    </nav>
+    </div>
 
 </header>
 
@@ -92,34 +145,48 @@
     <div class="home-copy">
 
 
-        <div class="eyebrow">
+        <div
+            class="eyebrow"
+            data-i18n="home.eyebrow"
+        >
             Portfolio / 2026
         </div>
 
 
         <h1 class="home-title">
 
-            Digital
+            <span data-i18n="home.title.digital">
+                Digital
+            </span>
 
-            <span class="soft">
+            <span
+                class="soft"
+                data-i18n="home.title.designer"
+            >
                 designer
             </span>
 
-            crafting
+            <span data-i18n="home.title.crafting">
+                crafting
+            </span>
 
-            <span class="gradient-text">
+            <span
+                class="gradient-text"
+                data-i18n="home.title.experiences"
+            >
                 experiences.
             </span>
 
         </h1>
 
 
-        <p class="home-description">
-
+        <p
+            class="home-description"
+            data-i18n="home.description"
+        >
             I design intuitive digital products,
             interfaces and visual systems that combine
             clear functionality with strong visual identity.
-
         </p>
 
 
@@ -130,9 +197,11 @@
                 class="primary-cta"
             >
 
-                Explore my work
+                <span data-i18n="home.cta.projects">
+                    Explore my work
+                </span>
 
-                <span>
+                <span aria-hidden="true">
                     ↗
                 </span>
 
@@ -142,6 +211,7 @@
             <a
                 href="contact.html"
                 class="secondary-cta"
+                data-i18n="home.cta.contact"
             >
                 Let's work together
             </a>
@@ -155,11 +225,17 @@
 
             <div class="meta-item">
 
-                <span class="meta-value">
+                <span
+                    class="meta-value"
+                    data-i18n="home.meta.uiux.value"
+                >
                     UI / UX
                 </span>
 
-                <span class="meta-label">
+                <span
+                    class="meta-label"
+                    data-i18n="home.meta.uiux.label"
+                >
                     Product Design
                 </span>
 
@@ -168,11 +244,17 @@
 
             <div class="meta-item">
 
-                <span class="meta-value">
+                <span
+                    class="meta-value"
+                    data-i18n="home.meta.3d.value"
+                >
                     3D
                 </span>
 
-                <span class="meta-label">
+                <span
+                    class="meta-label"
+                    data-i18n="home.meta.3d.label"
+                >
                     Visual Design
                 </span>
 
@@ -181,11 +263,17 @@
 
             <div class="meta-item">
 
-                <span class="meta-value">
+                <span
+                    class="meta-value"
+                    data-i18n="home.meta.motion.value"
+                >
                     Motion
                 </span>
 
-                <span class="meta-label">
+                <span
+                    class="meta-label"
+                    data-i18n="home.meta.motion.label"
+                >
                     Interaction
                 </span>
 
@@ -206,9 +294,11 @@
 
         <model-viewer
 
-            src="modeli/Man Working at PC Scene.glb"
+            src="modeli/Logo_J.glb"
 
-            alt="3D portfolio model"
+            alt="Interactive 3D portfolio model"
+
+            data-i18n-alt="alt.home.model"
 
             camera-controls
 
@@ -232,7 +322,9 @@
 
             <span class="model-label-dot"></span>
 
-            Interactive 3D
+            <span data-i18n="home.model.label">
+                Interactive 3D
+            </span>
 
         </div>
 
@@ -243,14 +335,16 @@
 
     <div class="home-rail">
 
-        <span>
+        <span data-i18n="home.rail.selected">
             Selected digital work
         </span>
 
 
         <span class="scroll-indicator">
 
-            Scroll
+            <span data-i18n="home.rail.scroll">
+                Scroll
+            </span>
 
             <span class="scroll-line"></span>
 
@@ -263,6 +357,8 @@
 
 </main>
 
+
+<script src="Language.js"></script>
 
 </body>
 
